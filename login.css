@@ -13,13 +13,12 @@ top: -40px;
 }
 section{
     margin-left: 250px;
-    width: 480px;
+    width: 510px;
     position: relative;
 }
 .loginbox{
     border: none;
     box-shadow: 0.1px 0.1px 5px 0.3px #888888;
-    width: 450px;
     height: 480px;
     padding-left: 60px;
     padding-top: 40px;
@@ -37,7 +36,7 @@ section{
     font-family: 'Noto Serif', serif;
 }
 .p-1{
-    font-size: large;
+    font-size: 0.9em;
     font-family: 'Noto Serif', serif;
     color: rgb(177,33,227);
     font-weight: 500;
@@ -48,7 +47,7 @@ section{
     padding-bottom: 30px;
 }
 .label{
-    font-size: large;
+    font-size: 0.9em;
     font-family: 'Exo 2', sans-serif;
     letter-spacing: 0.8px;
     padding-bottom: 8px;
@@ -62,6 +61,7 @@ section{
     font-size: large;
     font-family: 'Noto Serif', serif;
     letter-spacing: 0.8px;
+    
 }
 .passowrd-section{
     display: flex;
@@ -89,10 +89,8 @@ section{
     letter-spacing: 0.8px;
 }
 #button{
-text-align: center;
-padding-top: 20px;
-padding-bottom: 20px;
-padding-right: 50px;
+text-align: left;
+
 }
 #login-button{
     padding: 20px;
@@ -114,10 +112,12 @@ aside{
 video{
     width: 700px;
     height: 580px;
+    border: none;
 }
 .headings{
 display: flex;
 gap: 60px;
+
 }
 #student{
 font-size: 20px;
@@ -208,88 +208,75 @@ cursor: pointer;
 #back:hover:after{
     width: 100%;
 }
-@media only screen and (max-width : 768px) {
 
-    /* Add this to your existing login.css or create a new CSS file */
+@media (min-width: 0px) and (max-width: 900px) {
+    body {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    section {
+        margin-left: 5%;
+        width: 90%;
+    }
 
-body {
-    font-family: 'Exo 2', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    .loginbox {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        padding: 20px;
+    }
 
-header {
-    padding-bottom:20px;
-    height: 100px;
+    .email-div {
+        max-width: 100%;
+    }
 
-}
-.headings{
-    margin-left: 25px;
-    padding-bottom: -2px;
-}
+    .headings {
+        flex-direction: column;
+        gap: 8px;
+        max-width: 100%;
+    }
 
-.logo {
-    width: 200px;
-    height: 200px;
-}
+    .bottom {
+        display: none;
+    }
 
-section {
-    display: flex;
-    flex-direction: column;
-    margin-left: 60px;
-}
+    video {
+        display: none;
+    }
 
-.headings {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-}
+    .login-input-box {
+        max-width: 90%;
+    }
 
-.loginbox {
-    width: 80%;
-    margin: 20px 0;
-    padding-bottom: 20px;
-}
+    #login-button {
+        max-width: 90%;
+        justify-content: center;
+    }
 
-.login-input-box {
-    width: 80%;
-    padding: 10px;
-    margin: 5px 0;
-    height: 40px;
-}
+    #button {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
-.passowrd-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .passowrd-section {
+        gap: 110px;
+    }
 
-.remember {
-    display: flex;
-    align-items: center;
-}
+    #p-1 {
+        font-size: 15px;
+    }
 
-#login-button {
-    width: 200px;
-    padding: 10px;
+    #forget-password {
+        font-size: small;
+    }
 
-}
+    #student, #employee {
+        font-size: medium;
+    }
 
-video {
-    display: none;
-}
-
-.bottom {
-display: none;
-}
-
-#back-logo {
-    display: none;
-}
-
-#forget-password{
-    font-size: 13px;
-    margin-right: 20px;
-}
-
+    #login {
+        font-size: 1.5rem;
+    }
 }
