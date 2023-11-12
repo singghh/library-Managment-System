@@ -90,10 +90,7 @@ section{
     letter-spacing: 0.8px;
 }
 #button{
-text-align: center;
-padding-top: 20px;
-padding-bottom: 20px;
-padding-right: 50px;
+text-align: left;
 }
 #login-button{
     padding: 20px;
@@ -205,88 +202,74 @@ transition: 0.4s;
 #back:hover:after{
     width: 100%;
 }
-@media only screen and (max-width : 768px) {
+@media (min-width: 0px) and (max-width: 900px) {
+    body {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    section {
+        margin-left: 5%;
+        width: 90%;
+    }
 
-    /* Add this to your existing login.css or create a new CSS file */
+    .loginbox {
+        max-width: 90%;
+        height: auto;
+        border-radius: 6px;
+        padding: 20px;
+    }
 
-body {
-    font-family: 'Exo 2', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    .email-div {
+        max-width: 100%;
+    }
 
-header {
-    padding-bottom:20px;
-    height: 100px;
+    .headings {
+        flex-direction: column;
+        gap: 0px;
+        max-width: 100%;
+    }
 
-}
-.headings{
-    margin-left: 25px;
-    padding-bottom: -2px;
-}
+    .bottom {
+        display: none;
+    }
 
-.logo {
-    width: 200px;
-    height: 200px;
-}
+    #side {
+        display: none;
+    }
 
-section {
-    display: flex;
-    flex-direction: column;
-    margin-left: 60px;
-}
+    .login-input-box {
+        max-width: 90%;
+    }
 
-.headings {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-}
+    #login-button {
+        max-width: 90%;
+        justify-content: center;
+    }
 
-.loginbox {
-    width: 80%;
-    margin: 20px 0;
-    padding-bottom: 20px;
-}
+    #button {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
-.login-input-box {
-    width: 80%;
-    padding: 10px;
-    margin: 5px 0;
-    height: 40px;
-}
+    .passowrd-section {
+        gap: 110px;
+    }
 
-.passowrd-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    #p-1 {
+        font-size: 15px;
+    }
 
-.remember {
-    display: flex;
-    align-items: center;
-}
+    #forget-password {
+        font-size: small;
+    }
 
-#login-button {
-    width: 200px;
-    padding: 10px;
+    #student, #employee {
+        font-size: medium;
+    }
 
-}
-
-aside {
-    display: none;
-}
-
-.bottom {
-display: none;
-}
-
-#back-logo {
-    display: none;
-}
-
-#forget-password{
-    font-size: 13px;
-    margin-right: 20px;
-}
-
+    #login {
+        font-size: 1.5rem;
+    }
 }
