@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 140px;
+}
+.logo{
+width: 210px;
+height: 210px;
+position: absolute;
+top: -40px;
+}
+section{
+    margin-left: 250px;
+    width: 480px;
+    position: relative;
+}
+.loginbox{
+    border: none;
+    box-shadow: 0.1px 0.1px 5px 0.3px #888888;
+    width: 450px;
+    height: 480px;
+    padding-left: 60px;
+    padding-top: 40px;
+}
+#login{
+    font-size: 35px;
+    font-family: 'Arvo', serif;
+    padding-bottom: 8px;
+    letter-spacing: 0.9px;
+}
+#p-1{
+    font-size: large;
+    color: grey;
+    letter-spacing: 0.8px;
+    font-family: 'Noto Serif', serif;
+}
+.p-1{
+    font-size: large;
+    font-family: 'Noto Serif', serif;
+    color: rgb(177,33,227);
+    font-weight: 500;
+}
+.login-section{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.label{
+    font-size: large;
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 0.8px;
+    padding-bottom: 8px;
+}
+.login-input-box{
+    width: 360px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 8px;
+    font-size: large;
+    font-family: 'Noto Serif', serif;
+    letter-spacing: 0.8px;
+}
+.passowrd-section{
+    display: flex;
+    gap: 160px;
+}
+.email-div{
+    padding-bottom: 20px;
+}
+#forget-password{
+    font-family: 'Exo 2', sans-serif;
+    color: rgb(177,33,227);
+}
+.check-box{
+    width: 18px;
+    height: 20px;
+}
+.remember{
+    display: flex;
+    gap: 12px;
+}
+#rememberme{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: grey;
+    letter-spacing: 0.8px;
+}
+#button{
+text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-right: 50px;
+}
+#login-button{
+    padding: 20px;
+    width: 390px;
+    border-radius: 7px;
+    color: white;
+    background-color: #FABA26;
+    border: none;
+    font-size: large;
+    letter-spacing: 0.9px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#side{
+    position: absolute;
+    top: 40px;
+    left: 550px;
+    height: 450px;
+    width: 600px;
+}
+
+.headings{
+display: flex;
+gap: 60px;
+}
+#student{
+font-size: 20px;
+font-family: 'Exo 2', sans-serif;
+font-family: 'Martel', serif;
+letter-spacing: 1.1px;
+font-weight: bold;
+padding-bottom: 20px;
+position: relative;
+cursor: pointer;
+}
+/* #student:after{
+content: "";
+position: absolute;
+background-color:#FABA26;
+height: 3px;
+width: 0;
+left: 0;
+bottom: 13px;
+border-radius: 20%;
+transition: 0.4s;
+}
+#student:hover:after{
+    width: 100%;
+    
+} */
+
+#employee{
+    position: relative;
+font-size: 20px;
+font-family: 'Exo 2', sans-serif;
+font-family: 'Martel', serif;
+letter-spacing: 1.1px;
+font-weight: bold;
+padding-bottom: 20px;
+cursor: pointer;
+padding: 6px;
+background-color: rgb(201, 200, 200);
+border-radius: 5px;
+}
+/* #employee:after{
+    content: "";
+    position: absolute;
+    background-color: #FABA26;
+    width: 0px;
+    height: 3px;
+    left: 0;
+    bottom: 13px;
+    border-radius: 20%;
+    transition: 0.4s;
+}
+#employee:hover:after{
+    width: 100%;;
+} */
+#back{
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-family: sans-serif;
+    letter-spacing: 0.6px;
+    word-wrap: break-word;
+    font-weight: 600;
+    position: relative;
+}
+#back-logo{
+    height: 25px;
+    width: 25px;
+}
+.bottom{
+    margin-left: 20px;
+    display: flex;
+    gap: 1px;
+    align-items: center;
+}
+#back::after{
+content: "";
+position: absolute;
+width: 0px;
+height: 3px;
+background-color: black;
+left: 0;
+bottom: -2px;
+transition: 0.4s;
+}
+#back:hover:after{
+    width: 100%;
+}
+@media only screen and (max-width : 768px) {
+
+    /* Add this to your existing login.css or create a new CSS file */
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding-bottom:20px;
+    height: 100px;
+
+}
+.headings{
+    margin-left: 25px;
+    padding-bottom: -2px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.headings {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.loginbox {
+    width: 80%;
+    margin: 20px 0;
+    padding-bottom: 20px;
+}
+
+.login-input-box {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    height: 40px;
+}
+
+.passowrd-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+#login-button {
+    width: 200px;
+    padding: 10px;
+
+}
+
+aside {
+    display: none;
+}
+
+.bottom {
+display: none;
+}
+
+#back-logo {
+    display: none;
+}
+
+#forget-password{
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddy Books</title>
+    <link rel="stylesheet" href="/landingpage.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Inter:wght@500&family=Lato:wght@400;700&family=Martel:wght@600&family=Noto+Sans:wght@500&family=Oswald:wght@600&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="nav-box">
+    <img src="/BUDDY-removebg-preview.png" alt="logo" id="logo">
+    <div class="serach-box">
+        <input type="text" placeholder="Search Books..." id="search">
+    </div>
+    <nav>
+        <div class="dash">
+            <img src="/icons8-dashboard-24.png" alt="" id="img-dash">
+            <div><a href="#" id="dash-1">DashBoard</a></div>
+        </div>
+        <div class="dash">
+            <img src="/icons8-browse-30.png" alt="" id="img-dash">
+            <div><a href="#" id="dash">Browse Books</a></div>
+        </div>
+        <div class="dash">
+            <img src="/icons8-reservation-100.png" alt="" id="img-dash">
+            <div><a href="#" id="dash">Reservations</a></div>
+        </div>
+        <div class="dash">
+            <img src="/icons8-books-48.png" alt="" id="img-dash">
+            <div><a href="#" id="dash">My Books</a></div>
+        </div>
+        <div class="dash">
+            <img src="/icons8-notifications-78.png" alt="" id="img-dash">
+            <div><a href="#" id="dash">Notifications</a></div>
+        </div>
+        <div class="dash">
+            <img src="/icons8-account-settings-58.png" alt="" id="img-dash">
+            <div><a href="#" id="dash">Account Settings</a></div>
+        </div>
+        <div class="dash">
+            <img src="/icons8-online-support-48.png" alt="" id="img-dash">
+            <div><a href="#" id="dash">Help / Support</a></div>
+        </div>
+        <div class="dash">
+            <img src="/icons8-feedback-48.png" alt="" id="img-dash">
+            <div><a href="#" id="dash">Feedback</a></div>
+        </div>
+
+        <div class="dash">
+            <img src="/icons8-logout-rounded-left-50.png" alt="" id="img-dash">
+            <div><a href="#" id="dash">Logout</a></div>
+        </div>
+    </nav>
+</div>
+<aside>
+<div class="profile">
+    <div class="sub-profile">
+    <p id="matter">Profile</p>
+    <img src="/userprofile.png" alt="" id="pic"><br>
+    <label for="input">Upload Image</label>
+    <input type="file" accept="image/jpeg,image/png,image/jpg" id="input">
+    </div>
+</div>
+</aside>
+
+<script>
+    let profilepic=document.getElementById("pic");
+    let inputfile=document.getElementById("input");
+
+    inputfile.onchange=function(){
+        console.log(profilepic.src=URL.createObjectURL(inputfile.files[0]));
+    }
+</script>
+
+</body>
+</html>
